@@ -3,8 +3,8 @@ edorozhkin Infra repository
 
 ## ДЗ к лекции №5
 
-bastion 84.201.134.251
-someinternalhost 10.130.0.20
+bastion_IP = 84.201.134.251
+someinternalhost_IP = 10.130.0.20
 
 ### Подключение в одну команду
 ```
@@ -31,4 +31,11 @@ Host someinternalhost
         Port 22
         User appuser
 ```
+
+### Вход без жалоб на серт
+
+```
+https://84.201.134.251.xip.io
+```
+
 
