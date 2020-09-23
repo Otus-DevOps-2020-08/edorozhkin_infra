@@ -1,6 +1,24 @@
 # edorozhkin_infra
 edorozhkin Infra repository
 
+## ДЗ к лекции №6
+
+testapp_IP = 130.193.50.14
+testapp_port = 9292
+
+### Создание ВМ с помощью metadata.yaml
+
+```
+yc compute instance create \
+  --name reddit-app \
+  --hostname reddit-app \
+  --memory=4 \
+  --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+  --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+  --metadata serial-port-enable=1 \
+  --metadata-from-file user-data=./reddit_metadata.yaml
+```
+
 ## ДЗ к лекции №5
 
 bastion_IP = 84.201.134.251
