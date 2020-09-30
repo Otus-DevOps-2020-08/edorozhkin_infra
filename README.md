@@ -1,6 +1,18 @@
 # edorozhkin_infra
 edorozhkin Infra repository
 
+## ДЗ к лекции №7
+
+- Создан шаблон  packer для создания образов ВМ
+- Построен bake образ ВМ
+```
+packer build -var-file=variables.json ./immutable.json
+```
+- Создан скрипт создания ВМ c помощью CLI
+```
+/config-scripts/create-reddit-vm.sh
+```
+
 ## ДЗ к лекции №6
 
 testapp_IP = 130.193.50.14
