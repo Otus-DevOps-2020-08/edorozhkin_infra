@@ -1,0 +1,6 @@
+{
+    "cloud_folder_id": "xxxxxxxxxxxxxxx",
+    "service_account_key_file_path": "key.json",
+    "source_image_family_name": "ubuntu-xxxx-lts"
+}
+
