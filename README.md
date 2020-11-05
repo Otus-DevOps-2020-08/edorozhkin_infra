@@ -1,6 +1,11 @@
 # edorozhkin_infra
 edorozhkin Infra repository
 
+## ДЗ к лекции №9
+
+- Инстансы ВМ разделены на DB и APP
+- Созданы модули db и app
+- Созданы два окружения prod и stage
 
 ## ДЗ к лекции №8
 
