@@ -1,6 +1,17 @@
 # edorozhkin_infra
 edorozhkin Infra repository
 
+## ДЗ к лекции №10
+
+- Установлен ansible
+- Создан inventory 
+- Написан и запущен плейбук для клонирования git репозитория
+- После удаления директории ~/reddit запуск плейбука вернул changed=1, так как изменения были применены из-за отсутствия файлов
+```
+ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+
+
 ## ДЗ к лекции №9
 
 - Инстансы ВМ разделены на DB и APP
