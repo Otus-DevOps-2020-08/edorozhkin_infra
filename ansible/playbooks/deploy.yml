@@ -1,6 +1,12 @@
 - name: Deploy App
   hosts: app
   tasks:
+    - name: install apps
+      become: true
+      apt:
+        name:
+          - git
+
     - name: Fetch the latest version of application code
       git:
         repo: 'https://github.com/express42/reddit.git'
