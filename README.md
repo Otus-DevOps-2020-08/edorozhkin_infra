@@ -1,6 +1,12 @@
 # edorozhkin_infra
 edorozhkin Infra repository
 
+## ДЗ к лекции №13
+
+ - Создан Vagrantfile
+ - Доработаны роли app и db.
+ - С помощью molecule были проведены тесты
+
 ## ДЗ к лекции №12
 
  - Созданы роли
