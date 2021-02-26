@@ -1,11 +1,8 @@
----
-- name: Install Ruby
+- import_playbook: base.yml
+
+- name: Install Ruby && Bundler
   hosts: all
   become: true
-  tasks:
-  - name: Install Ruby
-    apt: "name={{ item }} state=present"
-    with_items:
-      - build-essential
-      - ruby-full
-      - ruby-bundler
+
+  roles:
+    - app
